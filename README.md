@@ -152,17 +152,3 @@ RPM安装
 * 说明：使用yum本地安装模式
 * 步骤：将RPM包放入任意目录下，执行：yum localinstall salt-2019.1.18-1.el7.centos.noarch.rpm salt-master-2019.1.18-1.el7.centos.noarch.rpm salt-minion-2019.1.18-1.el7.centos.noarch.rpm salt-syndic-2019.1.18-1.el7.centos.noarch.rpm salt-maid-2019.1.18-1.el7.centos.noarch.rpm
 
-架构说明
-===============
-
-* 重构架构图
-<p align="center">
-<img src="hhttps://github.com/andyyumiao/saltx/blob/master/doc/201904041031-29f9db5a-4d5d-4c3b-bff7-0c414c4b943dmax.png" alt="SaltStrcut" title="SaltStrcut" />
-</p>
-
-
-* 重构启动流程
-<p align="center">
-<img src="http://storage.jd.com/bdp-uploaded-files/201904041033-1bb4a1bb-5921-446e-ad10-cd4a46269e6dmax.png?Expires=3701828859&AccessKey=6f4e945a1d556e6d87d9bf41c7cdfc3f11da2dc2&Signature=TIlhfVZLiUy8hYOBt5vXW60xUkw%3D" alt="SaltBoot" title="SaltBoot" />
-</p>
-
