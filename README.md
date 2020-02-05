@@ -157,7 +157,7 @@ RPM安装
 
 * 重构架构图
 <p align="center">
-<img src="http://storage.jd.com/bdp-uploaded-files/201904041031-29f9db5a-4d5d-4c3b-bff7-0c414c4b943dmax.png?Expires=3701828718&AccessKey=6f4e945a1d556e6d87d9bf41c7cdfc3f11da2dc2&Signature=DWUhEevVaooqXj1Mx0aGQYid%2B58%3D" alt="SaltStrcut" title="SaltStrcut" />
+<img src="hhttps://github.com/andyyumiao/saltx/blob/master/doc/201904041031-29f9db5a-4d5d-4c3b-bff7-0c414c4b943dmax.png" alt="SaltStrcut" title="SaltStrcut" />
 </p>
 
 
