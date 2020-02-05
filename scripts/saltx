@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+'''
+Publish commands to the salt system from the command line on the master.
+'''
+
+from salt.scripts import salt_main
+from salt.ext.six.moves import input
+
+if __name__ == '__main__':
+    #salt_new()
+    salt_main()
+    # veri = input('Note: This is deprecated mode, continue? [N/y] ')
+    # if veri:
+    #     if veri == 'y':
+    #         salt_main()
+        

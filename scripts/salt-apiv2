@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+# Import salt libs
+from salt.scripts import salt_api_v2
+
+
+if __name__ == '__main__':
+    salt_api_v2()
