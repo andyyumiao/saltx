@@ -152,3 +152,5 @@ RPM安装
 * 说明：使用yum本地安装模式
 * 步骤：将RPM包放入任意目录下，执行：yum localinstall salt-2019.1.18-1.el7.centos.noarch.rpm salt-master-2019.1.18-1.el7.centos.noarch.rpm salt-minion-2019.1.18-1.el7.centos.noarch.rpm salt-syndic-2019.1.18-1.el7.centos.noarch.rpm salt-maid-2019.1.18-1.el7.centos.noarch.rpm
 
+# hello world
+
