@@ -126,7 +126,7 @@ the world. The following links should get you started:
 源码安装
 ===============
 
-* git clone http://git.jd.com/saltstack/salt.git
+* git clone https://github.com/andyyumiao/saltx
 
 * 进入/salt/录下，执行./setup.py install，会在/usr/bin/目录下生成salt-maid、saltx、salt-apiv2等启动脚本
 * salt-maid：salt-syndic的替代品，运行在salts-syndic节点
