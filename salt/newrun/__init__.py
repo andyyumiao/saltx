@@ -115,6 +115,8 @@ class Base(parsers.SaltCMDOptionParser):
         stdout_val, stderr_val = self.executeSaltCmd("salt-key -l acc|grep -v Keys")
 
         syndicList = stdout_val.splitlines()
+        if syndicList == "":
+           return ""
         #syndicList = re.findall(
         #    r"\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b", stdout_val, re.M)
         return syndicList
