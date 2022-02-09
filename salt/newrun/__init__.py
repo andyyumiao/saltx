@@ -320,14 +320,15 @@ class SyndicSubcribe(Base):
                 # NOTE: just save jid mapping 24h
                 self.redisInstance.sadd(wrapMessage['jid'], jid)
                 self.redisInstance.expire(wrapMessage['jid'], 86400)
+                
+                maid_log.info('Latest jid change for: {0}'.format(jid))
+                # self.redisInstance.set('p_s_job_{0}'.format(jid), wrapMessage['jid'])
+                # self.redisInstance.expire('p_s_job_{0}'.format(jid), 86400)
 
-                self.redisInstance.set('p_s_job_{0}'.format(jid), wrapMessage['jid'])
-                self.redisInstance.expire('p_s_job_{0}'.format(jid), 86400)
-
-                subCacheKey = 'jobs_subcache_{0}_{1}'.format(wrapMessage['jid'], subNode)
-                maid_log.info('Handle subCacheKey: {0}, {1}'.format(subCacheKey, jid))
-                self.redisInstance.set(subCacheKey, jid)
-                self.redisInstance.expire(subCacheKey, 86400)
+                # subCacheKey = 'jobs_subcache_{0}_{1}'.format(wrapMessage['jid'], subNode)
+                # maid_log.info('Handle subCacheKey: {0}, {1}'.format(subCacheKey, jid))
+                # self.redisInstance.set(subCacheKey, jid)
+                # self.redisInstance.expire(subCacheKey, 86400)
 
                 self.redisInstance.publish(wrapMessage['tempTopic'], json.dumps({'type': MessageType.WORK, 'result': True, 'error': error, 'sub_ip': subNode}, ensure_ascii=False, encoding='utf-8'))
                 return
